@@ -18,8 +18,8 @@ def combine_all(parent_dir):
     # create list of parameters needed in final merge, based on csv file name
     parameterList = "Air flow|Air primary flow_SP|Air volume|Base flow rate\
                     |Base volume pumped|Base volume since reset\
-                    |CER|Clamp plate temperature|DO|Off-gas|pH|Stir speed\
-                    |Temperature|Total gas|Total gas |Volume (mL)"
+                    |CER|Clamp plate temperature|DO|Off-gas|pH|stir\
+                    |Temperature|Total gas|Volume (mL)|Stir speed"
 
     # loop through all subdirectories and their CSV files and read them into dataframes
     for root, dirs, files in os.walk(parent_dir):
